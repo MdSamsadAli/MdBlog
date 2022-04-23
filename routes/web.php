@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\dashboardController;
+use App\Http\Controllers\User\UserController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
 use Illuminate\Support\Facades\Route;
@@ -38,3 +39,5 @@ Route::post('/store', [dashboardController::class, 'store'])->name('store');
 Route::get('/delete/{id}', [dashboardController::class, 'destroy'])->name('delete');
 Route::get('/edit/{id}', [dashboardController::class, 'edit'])->name('edit');
 Route::post('/update/{id}', [dashboardController::class, 'update'])->name('update');
+
+Route::get('/user/dashboard', [UserController::class, 'index'])->name('dashboard');
