@@ -25,6 +25,15 @@ class LoginRequest extends FormRequest
     {
         return [
             //
+            "email" => ["required","email"],
+            "password" => "required"
+        ];
+    }
+    public function messages(){
+        return[
+            "email.required" => "Email can not be empty",
+            "email.email" => "Not a Valid Email",
+            "password.required" => "Password can not be empty",
         ];
     }
 }

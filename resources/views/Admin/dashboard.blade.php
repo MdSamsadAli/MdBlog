@@ -144,7 +144,7 @@
                                     </a>
                                     <ul class="dropdown-menu shadow-sm" aria-labelledby="navbarDropdownMenuLink">
                                         <li><a href="/" style="color:black;">go home</a></li>
-                                        <li><a href="{{route('authe')}}" style="color:black;">Login</a></li>
+                                        <li><a href="{{route('login')}}" style="color:black;">Login</a></li>
                                     </ul>
                                 </li>
                             </ul>

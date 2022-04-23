@@ -39,7 +39,6 @@
                     </div>
                     <span class="text-danger">{{$errors->first('password')}}</span>
 
-                    
                     <div class="col-2">
                         <label for="password">Confirm Password</label>
                         <input type="text" placeholder="Enter Again Password..." name="confirm_password">
